@@ -15,7 +15,7 @@
   <h4>Cindy's WebPage</h4>
   <h1 class="w3-xxxlarge w3-animate-bottom">Hello! Welcome to my webpage =)</h1>
     <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-light-blue w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">My Resume</button>
+      <input type="button" value="My Resume" onclick="window.open('Website_Resume.pdf');" size="20" class="newButton w3-btn w3-xlarge w3-light-blue w3-hover-light-grey"/>
     </div>
   </div>
 </header>
@@ -25,47 +25,54 @@
 
 <!-- Modal -->
 <div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-<!--   <h4>About Me</h4><br> -->
-  <h4><a href = "About.html"> About Me </a></h4>  
-  <i class="fa fa-smile-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Write Something</p>
-  <p>Write Something</p>
-  <p>Write Something</p>
-  </div>
-</div>
 
-<div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-  <h4><a href = "Project.html">Project</a><h4>
-  <i class="fa fa-file-text w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>C</p>
-  <p>Matlab</p>
-  <p>Java</p>
-  </div>
-</div>
+	<div class="w3-third">
+	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+	  <h4><a href = "About.html"> About Me </a></h4>  
+	  <i class="fa fa-smile-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+	  <p>Write Something</p>
+	  <p>Write Something</p>
+	  <p>Write Something</p>
+	  </div>
+	</div>
 
-<div class="w3-third">
-  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-  <h4><a href = "Education.html">Education</a><h4>
-  <i class="fa fa-graduation-cap w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Computer Science and System</p>
-  <p>Psychology</p>
-  </div>
-</div>
+	<div class="w3-third">
+	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+	  <h4><a href = "Project.html">Project</a><h4>
+	  <i class="fa fa-file-text w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+	  <p>C</p>
+	  <p>Matlab</p>
+	  <p>Java</p>
+	  </div>
+	</div>
+
+	<div class="w3-third">
+	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+	  <h4><a href = "Education.html">Education</a><h4>
+	  <i class="fa fa-graduation-cap w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+	  <p>Computer Science and System</p>
+	  <p>Psychology</p>
+	  </div>
+	</div>
 </div>
 
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-12">
-<!--   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official" style="font-size:35px"></i></a> -->
-  <a href="https://github.com/cwang0828" class="w3-hover-text-indigo"><i class="fa fa-github" style="font-size:35px"></i></a>
-  <a href="www.linkedin.com/in/cinwan12/" class="w3-hover-text-indigo"><i class="fa fa-linkedin-square" style="font-size:35px"></i></a>
+  
+
+  <a href="https://github.com/cwang0828">
+     <img src="github.png" style="width:42px;height:42px;border:0;">
+  </a>
+  
+  <a href="www.linkedin.com/in/cinwan12/">
+     <img src="linkedin.png" style="width:42px;height:42px;border:0;">
+  </a>
   
   <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right"> 
     <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up style="font-size:35px"></i></span></a>
+        <img src="up.png" style="width:42px;height:42px;border:0;">
+    </a>
   </div>
   
 </footer>

@@ -8,8 +8,14 @@
 <link rel="stylesheet" href="w3-theme-blue.css">
 <link rel="stylesheet" href="font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
 
 /* First image (Logo. Full height) */
@@ -18,11 +24,63 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     min-height: 100%;
 }
 
+  .nav-tabs li a {
+      color: #777;
+  }
+
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
 </style>
 
+
+
+
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="Index.html">Cindy Wang</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="Website_Resume.pdf">Resume</a></li>
+		<li><a href="About.html">Me</a></li>
+		<li><a href="Project.html">Project</a></li>
+		<li><a href="Education.html">Education</a></li>
+	  </ul>
+	</div>
+  </div>
+</nav>
+
+
 <!-- Header -->
-<header class="bgimg-1 w3-container w3-theme w3-padding" id="myHeader">
-  <div class="w3-center">
+<header class="bgimg-1 w3-container w3-theme w3-padding " id="myHeader">
+
+  <div class="w3-center w3-padding-64">
     <h1 class="w3-xxxlarge w3-animate-bottom">Cindy Wang</h1>
     <div class="w3-padding-32">
       <input type="button" value="My Resume" onclick="window.open('Website_Resume.pdf');" size="20" class="newButton w3-btn w3-xlarge w3-light-blue w3-hover-light-grey"/>
@@ -43,6 +101,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 	  <a href = "About.html">
 	    <img src="me.png" style="width:110px;height:110px;"></img>
 	  </a>
+	  <br>
 	  <p>Write Something</p>
 	  <p>Write Something</p>
 	  <p>Write Something</p>

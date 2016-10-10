@@ -1,16 +1,26 @@
-
-
 <!DOCTYPE html>
 <html>
-<title>Cindy's Webpage</title>
+<title>Cindy's Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" 
+href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="w3-theme-blue.css">
-<link rel="stylesheet" href="font-awesome.min.css">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-tag {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
@@ -18,73 +28,127 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     min-height: 100%;
 }
 
+  .nav-tabs li a {
+      color: #777;
+  }
+
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 15px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
 </style>
 
+
+
+<body>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="http://mecode.co">Cindy Wang</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="Website_Resume.pdf">Resume</a></li>
+		<li><a href="About.html">Me</a></li>
+		<li><a href="Project.html">Project</a></li>
+		<li><a href="Education.html">Education</a></li>
+	  </ul>
+	</div>
+  </div>
+</nav>
+
+
 <!-- Header -->
-<header class="bgimg-1 w3-container w3-theme w3-padding" id="myHeader">
-  <div class="w3-center">
-    <h1 class="w3-xxxlarge w3-animate-bottom">Cindy Wang</h1>
-    <div class="w3-padding-32">
-      <input type="button" value="My Resume" onclick="window.open('Website_Resume.pdf');" size="20" class="newButton w3-btn w3-xlarge w3-light-blue w3-hover-light-grey"/>
+<div class="bgimg-1 w3-container w3-blue w3-center w3-padding-64" id="myHeader">
+  <h1 class="w3-margin w3-jumbo">About Me</h1>
+  <p class="w3-xlarge"></p>
+</div>
+
+
+<!-- Content -->
+<div class="w3-content w3-container" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <!-- Slideshow -->
+  <div class="w3-display-container mySlides">
+    <img src="pokemon1.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">pic #1</span>
     </div>
   </div>
-</header>
+  
+  <div class="w3-display-container mySlides">
+    <img src="Pokemon4.jpg" style="width:100%">
+    <div class="w3-display-middle w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">pic #2</span>
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="pokemon2.jpg" style="width:100%">
+    <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">pic #3</span>
+    </div>
+  </div>
+
+  <!-- Slideshow next/previous buttons -->
+  <div class="w3-container w3-dark-grey w3-padding-8 w3-xlarge">
+    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+    <div class="w3-center">
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">I don't really like writing about myself, but here are some things I do like:</span>
+    </div>
+
+  </div>
 
 
 
-
-<!-- Modal -->
-<div class="w3-row-padding w3-center w3-margin-top">
-
-	<div class="w3-third">
-	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-	  <h3><a href = "About.html"><b>About Me</b></a></h3>  
-	  <br>
-	  <a href = "About.html">
-	    <img src="me.png" style="width:110px;height:110px;"></img>
-	  </a>
-	  <p>Write Something</p>
-	  <p>Write Something</p>
-	  <p>Write Something</p>
-	  </div>
-	</div>
-
-	<div class="w3-third">
-	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-	  <h3><a href = "Project.html"><b>Project</b></a><h3>
-	  <br>
-	  <a href = "Project.html">
-	    <img src="project.png" style="width:110px;height:110px;"></img>
-	  </a>
-	  <p>C</p>
-	  <p>Matlab</p>
-	  <p>Java</p>
-	  </div>
-	</div>
-
-	<div class="w3-third">
-	  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
-	  <h3><a href = "Education.html"><b>Education</b></a><h3>
-	  <br>
-	  <a href = "Education.html">
-	    <img src="education.png" style="width:110px;height:110px;"></img>
-	  </a>
-	  <p>Computer Science and System</p>
-	  <p>Psychology</p>
-	  </div>
-	</div>
 </div>
 
 
 <!-- Footer -->
 <footer class="w3-container w3-center w3-theme-dark w3-padding-12">
-  
+<!-- 
+  <h4><a href = "index.html">Home</a></h4>
+ -->
 
   <a href="https://github.com/cwang0828">
      <img src="github.png" style="width:42px;height:42px;border:0;">
   </a>
   
-  <a href="www.linkedin.com/in/cinwan12/">
+  <a href="https://www.linkedin.com/in/cinwan12/">
      <img src="linkedin.png" style="width:42px;height:42px;border:0;">
   </a>
   
@@ -94,7 +158,45 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </a>
   </div>
   
+  <div style="position:relative;bottom:6px;" class="w3-tooltip w3-right"> 
+    <a href="index.html"><span class="w3-xlarge">
+        <img src="Home.png" style="width:45px;height:45px;border:0;">
+    </a>
+  </div>
+  
 </footer>
+
+<script>
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
 
 
 </body>
